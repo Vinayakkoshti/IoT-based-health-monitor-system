@@ -1,0 +1,15 @@
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
+wifi\queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+wifi\queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+wifi\queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+wifi\queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+wifi\queue.o: ../Core/Inc/FreeRTOSConfig.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+wifi\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h

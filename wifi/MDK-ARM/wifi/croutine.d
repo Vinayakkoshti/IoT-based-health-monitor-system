@@ -1,0 +1,14 @@
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+wifi\croutine.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+wifi\croutine.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+wifi\croutine.o: ../Core/Inc/FreeRTOSConfig.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h
+wifi\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
