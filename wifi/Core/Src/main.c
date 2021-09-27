@@ -78,6 +78,7 @@ uint8_t buff[3];
 uint16_t dt;
 float tempo;
 float get_temp(uint8_t device_adr,uint8_t mem_adr);
+float get_hert_oxy(uint8_t device_adr,uint8_t mem_adr);
 int count=80;
 int oxy=96;
 int get_heart_oxy();
@@ -365,6 +366,14 @@ int get_heart_oxy()
 {
 	oxy = rand()%100;
 }
+float get_hert_oxy(uint8_t device_adr,uint8_t mem_adr)
+{
+HAL_I2C_Mem_Read(&hi2c1, (0xAF<<1)|0x01, 0x07, 1, buff, 3, 100);
+uint8_t data = (buff[1] <<8 | buff[0]);
+ oxy= dt*0.02 - 273.15;
+return oxy;
+}
+
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_temperature_task */

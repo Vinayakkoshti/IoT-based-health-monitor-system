@@ -30,15 +30,17 @@ Build target 'wifi'
 compiling main.c...
 ../Core/Inc/UartRingbuffer.h(57): warning:  #1295-D: Deprecated declaration Uart_peek - give arg types
   int Uart_peek();
-../Core/Src/main.c(83): warning:  #1295-D: Deprecated declaration get_heart_oxy - give arg types
+../Core/Src/main.c(84): warning:  #1295-D: Deprecated declaration get_heart_oxy - give arg types
   int get_heart_oxy();
-../Core/Src/main.c(367): warning:  #940-D: missing return statement at end of non-void function "get_heart_oxy" 
+../Core/Src/main.c(368): warning:  #940-D: missing return statement at end of non-void function "get_heart_oxy" 
   }
-../Core/Src/main.c: 3 warnings, 0 errors
+../Core/Src/main.c(372): warning:  #177-D: variable "data"  was declared but never referenced
+  uint8_t data = (buff[1] <<8 | buff[0]);
+../Core/Src/main.c: 4 warnings, 0 errors
 linking...
 Program Size: Code=20084 RO-data=560 RW-data=236 ZI-data=18996  
 FromELF: creating hex file...
-"wifi\wifi.axf" - 0 Error(s), 3 Warning(s).
+"wifi\wifi.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -79,7 +81,7 @@ Package Vendor: Keil
 
    * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:ITM:1.2.0
       Source file:   Source\retarget_io.c
-Build Time Elapsed:  00:00:07
+Build Time Elapsed:  00:00:08
 </pre>
 </body>
 </html>

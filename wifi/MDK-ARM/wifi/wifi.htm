@@ -3,7 +3,7 @@
 <title>Static Call Graph - [wifi\wifi.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image wifi\wifi.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Sep 26 12:53:49 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Sep 27 18:01:40 2021
 <BR><P>
 <H3>Maximum Stack Usage =        300 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -684,13 +684,13 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[b7]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write4bitCommand
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write
+<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_RS
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_EnablePulse
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;temperature_task
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oxygen_task
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write4bitCommand
 </UL>
 
 <P><STRONG><a name="[87]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f4xx_hal.o(i.HAL_GetTick))
@@ -943,10 +943,10 @@ Global Symbols
 <P><STRONG><a name="[b2]"></a>LCD1602_Begin4BIT</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, stm_my_lcd16x2.o(i.LCD1602_Begin4BIT))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = LCD1602_Begin4BIT &rArr; LCD1602_TIM_Config &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_writeCommand
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write4bitCommand
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_TIM_Config
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_TIM_Config
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_writeCommand
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write4bitCommand
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -965,8 +965,8 @@ Global Symbols
 <P><STRONG><a name="[bc]"></a>LCD1602_clear</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, stm_my_lcd16x2.o(i.LCD1602_clear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LCD1602_clear &rArr; LCD1602_writeCommand &rArr; LCD1602_write &rArr; LCD1602_EnablePulse
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_writeCommand
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_writeCommand
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1786,16 +1786,16 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_TIM_MicorSecDelay
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write4bitCommand
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write4bitCommand
 </UL>
 
 <P><STRONG><a name="[bb]"></a>LCD1602_RS</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm_my_lcd16x2.o(i.LCD1602_RS))
 <BR><BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_writeCommand
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_print
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_writeCommand
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_write4bitCommand
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_print
 </UL>
 
 <P><STRONG><a name="[b3]"></a>LCD1602_TIM_Config</STRONG> (Thumb, 132 bytes, Stack size 32 bytes, stm_my_lcd16x2.o(i.LCD1602_TIM_Config))
@@ -1820,8 +1820,8 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_EnablePulse
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_writeCommand
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_print
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_print
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD1602_writeCommand
 </UL>
 
 <P><STRONG><a name="[b4]"></a>LCD1602_write4bitCommand</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, stm_my_lcd16x2.o(i.LCD1602_write4bitCommand))
